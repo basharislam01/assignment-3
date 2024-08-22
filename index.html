@@ -167,7 +167,7 @@
              </div>
           </section>
           <!-- Latest Section -->
-           <section class="lg:bg-white hidden lg:block">
+           <section class="lg:bg-white hidden lg:block lg:pb-10">
             <div class="lg:container mx-auto pt-16 space-y-6 text-center ">
               <button class="btn text-[#494949] bg-[#ABEF5F33] px-10 rounded-3xl font-bold text-xl mt-10 lg:mt-0"><i class="fa-solid fa-arrow-right text-[#494949] "></i>Explore our Latest works</button>
               <h1 class="font-extrabold text-4xl lg:text-5xl text-[#212121]">Our Latest Portfolio</h1>
@@ -204,7 +204,7 @@
             </div>
            </section>
                  <!-- Medium and small device -->
-            <section class=" bg-[#F4F4F4] lg:hidden block">
+            <section class=" bg-[#F4F4F4] lg:hidden block pb-10">
               <div class=" mx-auto pt-16 space-y-6 text-center ">
                 <button class="btn text-[#494949] bg-[#ABEF5F33] px-10 rounded-3xl font-bold text-xl mt-10 lg:mt-0"><i class="fa-solid fa-arrow-right text-[#494949] "></i>Explore our Latest works</button>
                 <h1 class="font-extrabold text-4xl lg:text-5xl text-[#212121]">Our Latest Portfolio</h1>
@@ -213,7 +213,7 @@
               
               
                     <!-- container start  here-->
-              <div class="grid md:grid-cols-2 md:grid-rows-4 space-x-6 space-y-6 mx-6 mt-16">
+              <div class="grid md:grid-cols-2 md:grid-rows-4 mx-6 mt-16 gap-6">
                       <!-- content 1 -->
                       <div class="md:col-span-2 bg-white border rounded-xl md:flex">
                         <img src="assets/img1.png" alt="loading..." class="md:p-3 p-10 md:h-auto md:w-auto w-full">
@@ -227,22 +227,67 @@
                       </div>
                       
                       <!-- content 2 -->
-                <div class="bg-white border">
-                   <img src="assets/img2.png" alt="loading">
+                <div class="bg-white border rounded-2xl w-full">
+                   <img src="assets/img2.png" alt="loading" class="p-6 w-full h-full">
                 </div>
 
                 <!-- content 3 -->
-                <div class="bg-white border">
-                  <img src="assets/img5.png" alt="loading...">
+                <div class="bg-white border md:max-h-72 rounded-2xl md:h-full ">
+                  <img src="assets/img5.png" alt="loading..." class="p-6 w-full md:h-full h-full">
                 </div>
 
                 <!-- content4 -->
-                <div class="md:col-span-2 bg-white border">work 4</div>
-                <div class="bg-white">work 5</div>
-                <div class="bg-white">work 6</div> 
-  
+                <div class="md:col-span-2 bg-white border rounded-xl md:flex">
+                  <img src="assets/img4.png" alt="loading..." class="md:p-3 p-10 md:h-auto md:w-auto w-full">
+
+                  <div class="my-auto md:space-y-3 space-y-1 px-10 pb-3 md:p-0">
+                    <h1 class="text-[#494949] font-bold md:text-2xl text-lg">Commercial</h1>
+                    <p class="md:text-base text-sm text-[#737373] md:pr-3">interior design plays a pivotal role in the success of any In today’s post.San Francisco-</p>
+                    <a class="btn btn-ghost md:text-xl text-base font-extrabold rounded-[30px] align-text-bottom px-0">View Details<i class="fa-solid fa-arrow-right bg-[#ABEF5F] h-8 w-8  rounded-2xl pl-2 pt-1 -rotate-45"></i></a>
+                  </div>
+                </div>
+
+                <!-- content 5 -->
+                <div class="bg-white border md:max-h-72 rounded-2xl md:h-full ">
+                  <img src="assets/img3.png" alt="loading..." class="p-6 w-full md:h-full h-full">
+                </div>
+
+
+                <!-- content 6 -->
+                <div class="bg-white border md:max-h-72 rounded-2xl md:h-full ">
+                  <img src="assets/img5.png" alt="loading..." class="p-6 w-full md:h-full h-full">
+                </div>
+
               </div>
             </section>
+             
+            <!-- a small div for mobile version -->
+             <div class="sm:block bg-white md:min-h-4 h-2 lg:hidden"></div>
+
+
+            <!-- comment box -->
+             <section class=" bg-no-repeat bg-cover" style="background-image: url(./assets/bg.jpg); background-color: rgba(0,0,0,0.);">
+             <div>
+              <div class=" md:mx-auto lg:mx-auto pt-16 space-y-6 text-center mx-3">
+                <button class="btn text-[#494949] bg-[#ABEF5F33] px-10 rounded-3xl font-bold text-xl mt-10 lg:mt-0"><i class="fa-solid fa-arrow-right text-[#494949] "></i>Let’s Connect</button>
+                <h1 class="font-extrabold text-4xl lg:text-5xl text-[#212121]">Let’s Discuss Next Project</h1>
+                <p class="text-base text-[#737373] lg:mx-64 md:mx-24 mx-6">Our experienced team of home remodelers will work with you to bring your project ideas to life. With the help of a professional contractor, GS Services Remodeling offers the opportunity to create a living space</p>
+              </div>
+
+               <!-- form box -->
+                <div class="lg:container mx-auto">
+                  <form class="grid  md:grid-cols-2 lg:grid-cols-2 gap-6 py-10 lg:mx-40 mx-6">
+                      <input type="text" name="name" id="" placeholder="First Name*" class="p-3 rounded-3xl">
+                      <input type="text" name="name" id="" placeholder="Last Name*" class="p-3 rounded-3xl" >
+                      <input type="text" name="name" id="" placeholder="Phone Number*" class="p-3 rounded-3xl">
+                      <input type="text" name="name" id="" placeholder="Email Number*" class="p-3 rounded-3xl">
+                      <textarea name="text" id="text" placeholder="Write your message here" rows="10" class="lg:col-span-2 md:col-span-2 p-3 rounded-3xl resize-none"></textarea>
+                      <button class="btn text-[#1C1C1C] bg-[#ABEF5F] px-10 rounded-3xl font-extrabold text-xl  lg:mt-0 md:col-span-2 lg:col-span-2">Let’s Connect<i class="fa-solid fa-arrow-right text-white bg-[#1C1C1C] h-8 w-8 -rotate-45 rounded-full text-3xl"></i></button>
+                  </form>
+                </div>
+
+             </div>
+             </section>
      </main>
 
      <!-- footer section -->
