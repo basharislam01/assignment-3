@@ -20,18 +20,20 @@
   font-family: "Manrope", sans-serif;
 }
     </style>
-
+ <!-- google icon -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ 
 
     <title>Assignment 3</title>
 </head>
-<body class="manrope-font">  
+<body class="manrope-font bg-slate-100">  
        <!-- header section -->
     <header class="container mx-auto">
      <!-- navbar section -->
       <nav class="flex">
-        <div class="navbar bg-base-100  justify-start lg:w-52">
+        <div class="navbar bg-base-100  justify-start lg:w-52 bg-slate-100">
             <!-- without menu -->
-        <a class="btn btn-ghost text-xl font-extrabold lg:text-3xl lg:h-16"> <i class="fa-solid fa-arrow-right bg-[#ABEF5F] h-8 w-8 lg:h-12 lg:w-12 py-1 lg:py-2 rounded-2xl lg:rounded-[50%] -rotate-45"></i>Rinterio</a>
+        <a class="btn btn-ghost text-xl font-extrabold lg:text-3xl lg:h-16 bg-slate-100"> <i class="fa-solid fa-arrow-right bg-[#ABEF5F] h-8 w-8 lg:h-12 lg:w-12 py-1 lg:py-2 rounded-2xl lg:rounded-[50%] -rotate-45"></i>Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex  mx-auto">
             <ul class="flex my-auto mx-auto space-x-6  ">
@@ -44,16 +46,38 @@
           </div>
           <div class="navbar-end flex space-x-4 items-center  lg:w-80">
               <div class="flex lg:space-x-6 space-x-8">
-                <i class="fa-solid fa-magnifying-glass  text-2xl  rounded-[50%] hidden md:block lg:block my-auto"></i>
-                <i class="fa-solid fa-cart-shopping  text-2xl rounded-[50%] hidden md:block lg:block my-auto"></i>
+                
+                <div class="flex my-auto space-x-2">
+                  <!-- Search icon -->
+                <button class="btn btn-ghost btn-circle pl-3 text-[#737373] bg-white hidden lg:block md:block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+
+                <!-- Buy icon -->
+                <button class="btn btn-ghost btn-circle bg-white hidden lg:block md:block pl-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="px" viewBox="0 -960 960 960" width="24px" fill="#737373"><path d="M280-71.52q-33 0-56.5-23.5t-23.5-56.5q0-33 23.5-56.5t56.5-23.5q33 0 56.5 23.5t23.5 56.5q0 33-23.5 56.5T280-71.52Zm400 0q-33 0-56.5-23.5t-23.5-56.5q0-33 23.5-56.5t56.5-23.5q33 0 56.5 23.5t23.5 56.5q0 33-23.5 56.5T680-71.52Zm-419.87-640 83 174h277.74l95.3-174H260.13Zm-47.04-96.96h568.52q32.96 0 50.15 28.98 17.2 28.98 1.11 59.02l-129 233.96q-12.13 21.69-32.58 34.11Q650.84-440 626.52-440H333.61l-38.91 71.52h473.78v96.96H280q-51.22 0-76.48-44.02-25.26-44.03-1.43-86.98l52.3-93.48-139.48-295.52H31.52v-96.96h143.57l38 80Zm130.04 270.96h277.74-277.74Z"/></svg>
+                </button>
+                </div>
+
                 <a class="btn lg:h-16 lg:text-xl lg:pt-3 text-base font-extrabold bg-[#ABEF5F] rounded-[25px] hidden md:block lg:block pt-1">Book Consult<i class="fa-solid fa-arrow-right bg-[#030303] text-white  rounded-[50%] -rotate-45 m-1 p-1"></i></a>
               </div>       
             <div class="mt-2 md:mt-0 lg:mt-0 lg:hidden pl-16">
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost">
+                <div tabindex="0" role="button" class="btn btn-ghost bg-white rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 w-8"
+                    class="h-5 w-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -298,7 +322,7 @@
  <!-- a small div for mobile version -->
  <div class="sm:block bg-white h-2"></div>
             <!-- comment box -->
-             <section class=" bg-no-repeat bg-cover" style="background-image: url(./assets/bg.jpg); background-color: rgba(0,0,0,0.);">
+             <section class="bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover">
              <div>
               <div class=" md:mx-auto lg:mx-auto pt-16 space-y-6 text-center mx-3">
                 <button class="btn text-[#494949] bg-[#ABEF5F33] px-10 rounded-3xl font-bold text-xl mt-10 lg:mt-0"><i class="fa-solid fa-arrow-right text-[#494949] "></i>Let’s Connect</button>
